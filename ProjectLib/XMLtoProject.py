@@ -25,7 +25,6 @@ class XMLtoProject(Project.MangaProject):
         self.addInitialPopulation()
         self.addTreeTimeLoop()
         self.addVisualization()
-
         self.argsToProject()
 
     def readProjectFile(self):
@@ -39,7 +38,7 @@ class XMLtoProject(Project.MangaProject):
         self.args["aboveground_competition"] = self.findChild(
             self.tree_dynamics, "aboveground_competition")
         self.args["belowground_competition"] = self.findChild(
-            self.tree_dynamics, "aboveground_competition")
+            self.tree_dynamics, "belowground_competition")
         self.args["tree_growth_and_death"] = self.findChild(
             self.tree_dynamics, "tree_growth_and_death")
 
